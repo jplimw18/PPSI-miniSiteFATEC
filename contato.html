@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Contato</h1>   
+ <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php">
+
+ <p>
+    <label for="Nome">Nome</label><br>
+    <input type="text" name="Nome" id="Nome" size="20" maxlength="35" placeholder="Seu nome">
+    
+ </p>
+
+<p>
+    <br><label for="senha">Senha</label><br>
+    <input type="password" name="Senha" id="senha" size="10" maxlength="8">
+</p>
+
+
+<p>
+<label for="sugestoes">Sugestões</label><br> 
+<textarea name="sugestoes" id="sugestoes"></textarea>
+</p>
+
+<p> 
+  <label for="curso">Qual é o seu curso?</label><br>
+  <select name="curso" id="curso" required>
+    <option value="">Selecione...</option>
+    <option value="ADS">Análise e desenvolvimento de sistemas</option>
+    <option value="CD">Ciencias de dados</option>
+    <option value="GE">Gestão empresarial</option>
+    <option value="GP">Gestão portuária</option>
+    <option value="RH">Gestão de recursos humanos</option>
+    <option value="LO">Logística</option>
+    <option value="SI">Sistemas para internet</option>
+  </select>  
+</p>
+
+<p>
+<fieldset>
+
+<legend>Qual é o seu período?</legend>
+
+<input type="radio" name="periodo" value="d" id="periodo-d">
+<label for="periodo-d"> Diurno </label>
+
+<input type="radio" name="periodo" value="n" id="periodo-n">
+<label for="periodo-n"> Noturno </label>
+
+</fieldset>
+</p>
+
+<p>
+<fieldset>
+  <legend>Os assuntos de seu interesse</legend>
+
+<input type="checkbox" name="assunto []" value="T" id="assunto-T">
+<label for="assunto-T">Tecnologia</label> 
+
+<input type="checkbox" name="assunto []" value="C" id="assunto-c">
+<label for="assunto-c">Carreira</label>
+
+<input type="checkbox" name="assunto []" value="X" id="assunto-x">
+<label for="assunto-c">Xabu</label>
+xabu
+
+</fieldset>
+</p>
+
+<h2>Outros controles</h2>
+
+<p>
+  <label for="nota">Nota para o site</label><br>
+  <input type="number" name="nota" id="nota" min="0" max="10">
+</p>
+
+<p>
+  <label for="email">Email</label><br>
+  <input type="email" name="email" id="email" placeholder="meu-email@gmail.com">
+</p>
+
+<p>
+  <label for="telefone">Telefone</label><br>
+  <input type="tel" name="telefone" id="telefone" placeholder="(99)99999-9999">
+</p>
+
+<p>
+  <label for="linkedin">LinkedIn</label><br>
+  <input type="url" name="linkedin" id="linkedin" placeholder="ftp://linkedin.com/seu-id">
+</p>
+
+<p>
+  <label for="busca">Busca</label><br>
+  <input type="search" name="busca" id="busca">
+</p>
+
+<p>
+<label for="cor">Escolha uma cor</label><br>
+  <input type="color" name="cor" id="cor">
+</p>
+
+<p>
+  <label for="arquivo">Insira um arquivo</label><br>
+    <input type="file" name="arquivo" id="arquivo">
+</p>
+
+<p>
+  <label for="data">Insira uma data</label><br>
+  <input type="date" name="data" id="data">
+</p>
+
+<p>
+  <label for="datetime">Data e hora</label><br>
+  <input type="datetime-local" name="datetime" id="datetime">
+</p>
+
+<p>
+  <label for="time">Hora</label><br>
+  <input type="time" name="time" id="time">
+</p>
+
+<p>
+  <label for="semana">Semana</label><br>
+  <input type="week" name="week" id="semana"> 
+</p>
+
+<p>
+  <label for="mes">Mes</label><br>
+  <input type="month" name="mes" id="mes">
+</p>
+
+<p>
+  <label for="satisfacao">Grau de satisfação (0-10)</label><br>
+  <input type="range" name="satisfacao" id="satisfacao" min="0" max="10"> 
+</p>
+
+<p>
+  <label for="cpf">CPF</label><br>
+  <input type="text" name="cpf" id="cpf" value="999.999.999-99" readonly> 
+</p>
+
+<p>
+  <label for="cep">CEP</label><br>
+  <input type="text" name="cep" id="cep" placeholder="99999-999" pattern="[0-9]{5}-[0-9]{3}"> 
+</p>
+
+
+  <!-- file 
+  date 
+  datetime
+  week
+  month -->
+
+
+<button>Enviar</button>
+
+</form>
+</body> 
+</html>
